@@ -1,0 +1,27 @@
+{
+  "name": "rentbrellaAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Patrick <patrick.angelis@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^5.19.4",
+    "sqlite": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^1.19.3",
+    "sequelize-cli": "^5.5.1",
+    "sucrase": "^3.10.1"
+  }
+}
