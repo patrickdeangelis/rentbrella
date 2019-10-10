@@ -1,4 +1,5 @@
 import Premise from '../models/Premise';
+import Station from '../models/Station';
 
 class PremiseController {
   async store(req, res) {
@@ -31,6 +32,33 @@ class PremiseController {
           adress
         };
       })
+    });
+  }
+
+  async getStations(req, res) {
+    if (isNaN(req.params.premise_id)) {
+      return res.status(400).json({ error: 'Url param is not a number' });
+    }
+
+    const stations = await Station.findAll({
+      where: { premise_id: req.params.premise_id }
+    });
+
+    if (!stations) {
+      return res.status(400).json({ error: 'Stations not found' });
+    }
+
+    const entries = stations.map(station => {
+      const { serial, premise_id, name } = station;
+      return {
+        serial,
+        premise_id,
+        name
+      };
+    });
+
+    return res.json({
+      entries
     });
   }
 }
