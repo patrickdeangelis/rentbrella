@@ -13,3 +13,9 @@ Aplicação desenvolida em Node.js, com a biblioteca Express para gerenciar as r
 - instale as dependências
   `npm install`
 - Inicie a aplicação `npm run dev`
+
+## Dados para contato
+
+- Nome: Patrick de Ângelis
+- Email: patrick.angelis@hotmail.com
+- telefone: 83 99614-1975
