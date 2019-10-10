@@ -8,10 +8,10 @@ class Premise extends Model {
         adress: Sequelize.STRING
       },
       {
-        sequelize,
-        name: 'premise'
+        sequelize
       }
     );
+    return this;
   }
 }
 
